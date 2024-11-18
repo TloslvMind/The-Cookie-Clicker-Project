@@ -40,9 +40,10 @@ while True:
             money_elem = money_elem.replace(",", "")
         cookie_count = int(money_elem)
 
+
         affordable_upgrades = {}
         for cost, id in cookie_upgrades.items():
-            if cookie_count > cost:
+            if cookie_count >= cost:
                 affordable_upgrades[cost] = id
 
 
